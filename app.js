@@ -1,7 +1,6 @@
 var express = require('express')
 var bodyParser = require("body-parser")
 var engine = require('ejs-locals')
-var mysql = require('mysql')
 
 var app = express()
 
@@ -10,13 +9,6 @@ app.set('views',__dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(__dirname + "/public"))
-
-var connection = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    database : 'joinus',   
-    password : 'password' 
-});
 
 app.get("/",(req,res)=>{
     res.render('home')
