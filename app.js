@@ -19,7 +19,7 @@ app.get("/thanks",(req,res)=>
         res.render('thanks')
     })
 app.post("/register",(req,res)=>{
-    res.redirect("/")
+    res.redirect("thanks")
     })
 
 const port = process.env.PORT || '5000';
