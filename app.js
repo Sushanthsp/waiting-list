@@ -3,9 +3,10 @@ var express = require('express')
 // var bodyParser = require("body-parser")
 
 var app = express()
+app.set('view engine', 'ejs');
 
 app.get('/', (req,res) => {
-    res.send('Welcome to Join us app');
+    res.render("home");
 })
 
 const port = process.env.PORT || '5000';
