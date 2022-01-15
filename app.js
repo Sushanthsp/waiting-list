@@ -1,11 +1,8 @@
 var express = require('express')
 var bodyParser = require("body-parser")
 var engine = require('ejs-locals')
-const user = require("./config")
 
 var app = express()
-
-app.use(express.json());
 
 app.engine('ejs', engine);
 app.set('views',__dirname + '/views');
