@@ -103,28 +103,51 @@ input[type='text']:focus {
     font-size: 1.8rem;
 }
 
-    /* @media only screen and (min-width: 480px)
-    {
-.flex-box
-{
-    background-color: blue;
-}
-    } */
 
-
-    @media  only screen and (min-width: 768px) 
+    @media  screen and (max-width:982px) 
     {
-        .flex-box
+        /* .flex-box
         {
             background-color: rgb(156, 90, 153);
+        } */
+        .flex-container
+        {
+            justify-content: space-around;
+            font-size: 3.2rem;
         }
-            }
+        #box1
+        {
+            border-radius: 2rem;
+            height: 8rem;
+            width: 55rem;
+        }
+        #box3
+        {
+            border-radius: 2rem;
+            height: 8rem;
+            width: 55rem;
+        }
+        #box2
+        {
+            height: 40rem;
+            width: 47rem;
+            border-radius: 2rem;
+        }
+        .button
+        {
+            font-size: 2.5rem;
+            margin-top: 1.6rem;
+            height: 4.1rem;
+            width: 15rem;
+            border-radius: 1rem;
+        }
+}
 
      
-    @media  only screen and (min-width: 992px)
+    /* @media  only screen and (max-width: 992px)
     {
         .flex-box
         {
             background-color: rgb(62, 197, 9);
-        }
-            }
+        } */
+            
