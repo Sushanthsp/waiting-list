@@ -1,8 +1,11 @@
 var express = require('express')
 var bodyParser = require("body-parser")
 var engine = require('ejs-locals')
+const user = require("./config")
 
 var app = express()
+
+app.use(express.json());
 
 app.engine('ejs', engine);
 app.set('views',__dirname + '/views');
@@ -10,16 +13,18 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(__dirname + "/public"))
 
+
 app.get("/",(req,res)=>{
-    res.render('home')
+    res.render('home');
     })
 
 app.get("/thanks",(req,res)=>
     {
         res.render('thanks')
-    })
+})
+    
 app.post("/register",(req,res)=>{
-    res.redirect("thanks")
+        res.redirect('/thanks')
     })
 
 const port = process.env.PORT || '5000';

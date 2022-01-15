@@ -8,16 +8,21 @@
 <body>
    
     <div class="flex-container">
-        <div class="flex-box" id="box1">Header</div>
+        <div class="flex-box" id="box1">
+            <div class="header-inner-box" id="header-inner-box1">College connect</div>
+            <div class="header-inner-box" id="header-inner-box2">Connect with Seniors</div>
+        </div>
+      
 
 
         <div class="flex-box" id="box2">
             <div class="center">
-                <p class="">enter your email to join a group of <strong>
+                <p class="">Enter your email to join a group of <strong>
                     <%= 200%>
                 </strong> in our community. We are 100% not cult</p>
                 <form method="POST" action='/register'>
-                    <input type="email" name="email" id="form" placeholder="enter your email">
+                    <input type="email" name="email" class="form" placeholder="Enter your email" required>
+                    <input type="text" name="college" class="form" placeholder="Enter your College" required>
                 <button class="button">Join now</button>
                 </form>
             </div>
