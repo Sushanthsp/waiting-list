@@ -104,10 +104,6 @@ input[type='text']:focus {
 
     @media  screen and (max-width:982px) 
     {
-         /* .flex-box
-        {
-            background-color: rgb(156, 90, 153);
-        }  */
       .flex-container
         {
             justify-content: space-around;
@@ -129,7 +125,7 @@ input[type='text']:focus {
         {
             height: 40rem;
             width: 47rem;
-            border-radius: 2rem;
+            border-radius: 4rem;
         }
         .button
         {
@@ -140,6 +136,17 @@ input[type='text']:focus {
             border-radius: 1rem;
         }
 }
+
+
+@media  screen and (max-width:982px) 
+    {
+          .flex-box #header
+        {
+           margin-top: 220px;
+           font-size: 4rem;
+           border-radius: 4rem;
+        } 
+    }
 
      
  /*    @media  only screen and (max-width: 992px)
